@@ -34,18 +34,21 @@ spec:
         - containerPort: 8080
       imagePullSecrets:
       - name: regcred
+        
         readinessProbe:
           httpGet:
             path: /hello
             port: 8080
           initialDelaySeconds: 15
           periodSeconds: 10
+        
         livenessProbe:
           httpGet:
             path: /hello
             port: 8080
           initialDelaySeconds: 15
           periodSeconds: 10
+        
         startupProbe:
           httpGet:
             path: /hello
