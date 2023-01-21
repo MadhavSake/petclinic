@@ -34,6 +34,8 @@ spec:
         - containerPort: 8080
       imagePullSecrets:
       - name: regcred
+      
+      probes:
         readinessProbe:
             httpGet:
               path: /hello
