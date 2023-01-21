@@ -19,11 +19,4 @@ spec:
             name: petclinic-service
             port:
               number: 80
-      - path: /testpath
-        backend:
-        pathType: Prefix
-        backend:
-          service:
-            name: test
-            port:
-              number: 8080
+      
