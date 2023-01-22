@@ -16,7 +16,7 @@ spec:
         pathType: Prefix
         backend:
           service:
-            name: petclinic-service
+            name: petclinic-service-default
             port:
               number: 80
       
