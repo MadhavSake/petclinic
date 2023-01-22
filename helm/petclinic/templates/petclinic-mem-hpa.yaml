@@ -2,6 +2,7 @@ apiVersion: autoscaling/v2beta1
 kind: HorizontalPodAutoscaler
 metadata:
   name: petclinic-mem-hpa
+  namespace: kube-system
 spec:
   maxReplicas: 5
   minReplicas: 1
